@@ -1,0 +1,82 @@
+.release-container {
+  margin-top: 40px;
+  padding: 20px;
+  background: #f3f4f6;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.release-container h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #1e3a8a;
+  margin-bottom: 10px;
+}
+
+.release-container h3 {
+  font-size: 1.4rem;
+  color: #1e3a8a;
+  margin-bottom: 10px;
+}
+
+.release-container p {
+  font-size: 1.2rem;
+  color: #374151;
+  margin-bottom: 20px;
+}
+
+.release-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.release-container li {
+  font-size: 1.1rem;
+  color: #374151;
+  margin-bottom: 8px;
+}
+
+.release-buttons {
+  margin-top: 20px;
+}
+
+.release-button {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 12px 20px;
+  color: white;
+  background: #1e3a8a;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s ease-in-out;
+  margin: 5px;
+}
+
+.release-button:hover {
+  background: #172554;
+}
+
+.release-button.youtube {
+  background: #ff0000;
+}
+
+.release-button.youtube:hover {
+  background: #c20000;
+}
+
+.release-button.linkedin {
+  background: #0077b5;
+}
+
+.release-button.linkedin:hover {
+  background: #005582;
+}
+
+.contact-email {
+  margin-top: 15px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #1e3a8a;
+}

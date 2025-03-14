@@ -1,38 +1,181 @@
-.App {
-  text-align: center;
+/* Estilos gerais */
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  text-align: center; /* Centraliza todo o conteúdo */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  margin-bottom: 40px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo-container {
+  display: flex;
+  justify-content: center; /* Centraliza a logo */
+  align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logo {
+  width: 1000px; /* Aumenta o tamanho da logo */
+  height: auto;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #1e3a8a;
+  margin: 10px 0;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #374151;
+  margin: 10px 0;
+}
+
+.tech-stack {
+  margin-bottom: 40px;
+}
+
+.tech-stack p {
+  font-size: 1.2rem;
+  color: #374151;
+  margin: 10px 0;
+}
+
+.apis {
+  margin-bottom: 40px;
+}
+
+.apis h2 {
+  font-size: 2rem;
+  color: #1e3a8a;
+  margin-bottom: 20px;
+}
+
+.apis ul {
+  list-style: none;
+  padding: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center; /* Centraliza os botões das APIs */
+}
+
+.apis li {
+  margin-bottom: 15px;
+  width: 100%; /* Garante que os botões ocupem a largura total */
+  max-width: 500px; /* Define uma largura máxima para os botões */
+}
+
+.apis a {
+  display: block; /* Faz os botões ocuparem a largura total do li */
+  font-size: 1.2rem;
+  color: #1e3a8a;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 2px solid #1e3a8a;
+  border-radius: 8px;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.apis a:hover {
+  background: #1e3a8a;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Botão de Release */
+.release-button {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 12px 20px;
+  color: white;
+  background: #1e3a8a;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s ease-in-out;
+  margin: 10px; /* Adiciona margem ao redor do botão */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.release-button:hover {
+  background: #172554;
+}
+
+/* Botões do GitHub, YouTube e LinkedIn */
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Centraliza verticalmente */
+  gap: 10px; /* Espaço entre os botões */
+  margin-top: 20px;
+  flex-wrap: wrap; /* Permite que os botões quebrem para a próxima linha em telas pequenas */
+}
+
+.github-button, .youtube-button, .linkedin-button {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 12px 20px;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s ease-in-out;
+  margin: 5px; /* Adiciona margem ao redor dos botões */
+}
+
+.github-button {
+  background: #333;
+}
+
+.github-button:hover {
+  background: #555;
+}
+
+.youtube-button {
+  background: #ff0000; /* Vermelho do YouTube */
+}
+
+.youtube-button:hover {
+  background: #cc0000; /* Vermelho mais escuro ao passar o mouse */
+}
+
+.linkedin-button {
+  background: #0077b5; /* Azul do LinkedIn */
+}
+
+.linkedin-button:hover {
+  background: #005582; /* Azul mais escuro ao passar o mouse */
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+}
+
+.footer p {
+  font-size: 1rem;
+  color: #374151;
+  margin-bottom: 10px;
+}
+
+.subsidiary-skills {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.language-flags {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.flag {
+  width: 30px;
+  height: auto;
+  border-radius: 50%;
 }
