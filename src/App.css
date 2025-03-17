@@ -1,4 +1,4 @@
-//* 🔥 RESET GERAL PARA EVITAR BUGS */
+//* RESET GERAL PARA EVITAR BUGS */
 * {
   margin: 0;
   padding: 0;
@@ -6,29 +6,29 @@
   font-family: Arial, sans-serif;
 }
 
-/* 🔹 CONTAINER PRINCIPAL */
+/* CONTAINER PRINCIPAL */
 .container {
   max-width: 1600px;
   margin: 0 auto;
   padding: 20px;
-  text-align: center; /* Centraliza todo o conteúdo */
+  text-align: center;
 }
 
-/* 🔹 CABEÇALHO */
+/* CABEÇALHO */
 .header {
   margin-bottom: 40px;
 }
 
 .logo-container {
   display: flex;
-  justify-content: center; /* Centraliza a logo */
+  justify-content: center;
   align-items: center;
 }
 
 .logo {
-  width: 1000px; /* Aumenta o tamanho da logo */
+  width: 1000px;
   height: auto;
-  max-width: 100%; /* Garante que a logo não quebre em telas menores */
+  max-width: 100%;
 }
 
 h1 {
@@ -43,7 +43,7 @@ p {
   margin: 10px 0;
 }
 
-/* 🔹 STACK DE TECNOLOGIAS */
+/* STACK DE TECNOLOGIAS */
 .tech-stack {
   margin-bottom: 40px;
 }
@@ -54,7 +54,7 @@ p {
   margin: 10px 0;
 }
 
-/* 🔹 LISTA DE APIs */
+/* LISTA DE APIs */
 .apis {
   margin-bottom: 40px;
 }
@@ -70,17 +70,17 @@ p {
   padding: 0;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centraliza os botões das APIs */
+  align-items: center;
 }
 
 .apis li {
   margin-bottom: 15px;
-  width: 100%; /* Garante que os botões ocupem a largura total */
-  max-width: 500px; /* Define uma largura máxima para os botões */
+  width: 100%;
+  max-width: 500px;
 }
 
 .apis a {
-  display: block; /* Faz os botões ocuparem a largura total do li */
+  display: block;
   font-size: 1.2rem;
   color: #1e3a8a;
   text-decoration: none;
@@ -95,7 +95,7 @@ p {
   color: white;
 }
 
-/* 🔹 BOTÃO DO RELEASE */
+/* BOTÃO DO RELEASE */
 .release-button {
   display: inline-block;
   font-size: 1.2rem;
@@ -106,21 +106,21 @@ p {
   text-decoration: none;
   border-radius: 8px;
   transition: background 0.3s ease-in-out;
-  margin: 10px; /* Adiciona margem ao redor do botão */
+  margin: 10px;
 }
 
 .release-button:hover {
   background: #172554;
 }
 
-/* 🔹 BOTÕES DO GITHUB, YOUTUBE E LINKEDIN */
+/* BOTÕES DO GITHUB, YOUTUBE E LINKEDIN */
 .action-buttons {
   display: flex;
   justify-content: center;
-  align-items: center; /* Centraliza verticalmente */
-  gap: 10px; /* Espaço entre os botões */
+  align-items: center;
+  gap: 10px;
   margin-top: 20px;
-  flex-wrap: wrap; /* Permite que os botões quebrem para a próxima linha em telas pequenas */
+  flex-wrap: wrap;
 }
 
 .github-button, .youtube-button, .linkedin-button {
@@ -132,7 +132,7 @@ p {
   text-decoration: none;
   border-radius: 8px;
   transition: background 0.3s ease-in-out;
-  margin: 5px; /* Adiciona margem ao redor dos botões */
+  margin: 5px;
 }
 
 .github-button {
@@ -144,22 +144,22 @@ p {
 }
 
 .youtube-button {
-  background: #ff0000; /* Vermelho do YouTube */
+  background: #ff0000;
 }
 
 .youtube-button:hover {
-  background: #cc0000; /* Vermelho mais escuro ao passar o mouse */
+  background: #cc0000;
 }
 
 .linkedin-button {
-  background: #0077b5; /* Azul do LinkedIn */
+  background: #0077b5;
 }
 
 .linkedin-button:hover {
-  background: #005582; /* Azul mais escuro ao passar o mouse */
+  background: #005582;
 }
 
-/* 🔹 RODAPÉ */
+/* RODAPÉ */
 .footer {
   text-align: center;
   margin-top: 40px;
@@ -191,14 +191,14 @@ p {
   border-radius: 50%;
 }
 
-/* 🔥🔥🔥 RESPONSIVIDADE 🔥🔥🔥 */
-/* 🔹 Ajuste para telas menores que 1024px */
+/* RESPONSIVIDADE */
+/* Ajuste para telas menores que 1024px */
 @media screen and (max-width: 1024px) {
   .container {
     padding: 15px;
   }
   .logo {
-    width: 600px; /* Reduz o tamanho da logo em telas menores */
+    width: 600px;
   }
   .tech-stack p {
     font-size: 1rem;
@@ -212,13 +212,13 @@ p {
   }
 }
 
-/* 🔹 Ajuste para telas menores que 768px (Tablets e Celulares) */
+/* Ajuste para telas menores que 768px */
 @media screen and (max-width: 768px) {
   .header h1 {
     font-size: 1.8rem;
   }
   .logo {
-    width: 400px; /* Ajusta a logo para não quebrar */
+    width: 400px;
   }
   .tech-stack {
     padding: 15px;
@@ -235,13 +235,13 @@ p {
   }
 }
 
-/* 🔹 Ajuste para telas menores que 480px (Celulares pequenos) */
+/* Ajuste para telas menores que 480px */
 @media screen and (max-width: 480px) {
   .header h1 {
     font-size: 1.5rem;
   }
   .logo {
-    width: 250px; /* Deixa a logo menor em celulares */
+    width: 250px;
   }
   .tech-stack {
     padding: 10px;
@@ -251,9 +251,4 @@ p {
   }
   .release-button, .github-button, .youtube-button, .linkedin-button {
     font-size: 0.8rem;
-    padding: 7px 12px;
-  }
-  .footer p {
-    font-size: 0.8rem;
-  }
-}
+    padding: 7px
