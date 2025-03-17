@@ -1,12 +1,20 @@
-/* Estilos gerais */
+//* 🔥 RESET GERAL PARA EVITAR BUGS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* 🔹 CONTAINER PRINCIPAL */
 .container {
   max-width: 1600px;
   margin: 0 auto;
   padding: 20px;
-  font-family: Arial, sans-serif;
   text-align: center; /* Centraliza todo o conteúdo */
 }
 
+/* 🔹 CABEÇALHO */
 .header {
   margin-bottom: 40px;
 }
@@ -20,6 +28,7 @@
 .logo {
   width: 1000px; /* Aumenta o tamanho da logo */
   height: auto;
+  max-width: 100%; /* Garante que a logo não quebre em telas menores */
 }
 
 h1 {
@@ -34,6 +43,7 @@ p {
   margin: 10px 0;
 }
 
+/* 🔹 STACK DE TECNOLOGIAS */
 .tech-stack {
   margin-bottom: 40px;
 }
@@ -44,6 +54,7 @@ p {
   margin: 10px 0;
 }
 
+/* 🔹 LISTA DE APIs */
 .apis {
   margin-bottom: 40px;
 }
@@ -84,7 +95,7 @@ p {
   color: white;
 }
 
-/* Botão de Release */
+/* 🔹 BOTÃO DO RELEASE */
 .release-button {
   display: inline-block;
   font-size: 1.2rem;
@@ -102,7 +113,7 @@ p {
   background: #172554;
 }
 
-/* Botões do GitHub, YouTube e LinkedIn */
+/* 🔹 BOTÕES DO GITHUB, YOUTUBE E LINKEDIN */
 .action-buttons {
   display: flex;
   justify-content: center;
@@ -148,7 +159,7 @@ p {
   background: #005582; /* Azul mais escuro ao passar o mouse */
 }
 
-/* Footer */
+/* 🔹 RODAPÉ */
 .footer {
   text-align: center;
   margin-top: 40px;
@@ -178,4 +189,71 @@ p {
   width: 30px;
   height: auto;
   border-radius: 50%;
+}
+
+/* 🔥🔥🔥 RESPONSIVIDADE 🔥🔥🔥 */
+/* 🔹 Ajuste para telas menores que 1024px */
+@media screen and (max-width: 1024px) {
+  .container {
+    padding: 15px;
+  }
+  .logo {
+    width: 600px; /* Reduz o tamanho da logo em telas menores */
+  }
+  .tech-stack p {
+    font-size: 1rem;
+  }
+  .apis h2 {
+    font-size: 1.5rem;
+  }
+  .release-button, .github-button, .youtube-button, .linkedin-button {
+    font-size: 1rem;
+    padding: 10px 18px;
+  }
+}
+
+/* 🔹 Ajuste para telas menores que 768px (Tablets e Celulares) */
+@media screen and (max-width: 768px) {
+  .header h1 {
+    font-size: 1.8rem;
+  }
+  .logo {
+    width: 400px; /* Ajusta a logo para não quebrar */
+  }
+  .tech-stack {
+    padding: 15px;
+  }
+  .apis h2 {
+    font-size: 1.4rem;
+  }
+  .release-button, .github-button, .youtube-button, .linkedin-button {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+  .footer p {
+    font-size: 0.9rem;
+  }
+}
+
+/* 🔹 Ajuste para telas menores que 480px (Celulares pequenos) */
+@media screen and (max-width: 480px) {
+  .header h1 {
+    font-size: 1.5rem;
+  }
+  .logo {
+    width: 250px; /* Deixa a logo menor em celulares */
+  }
+  .tech-stack {
+    padding: 10px;
+  }
+  .apis h2 {
+    font-size: 1.2rem;
+  }
+  .release-button, .github-button, .youtube-button, .linkedin-button {
+    font-size: 0.8rem;
+    padding: 7px 12px;
+  }
+  .footer p {
+    font-size: 0.8rem;
+  }
 }
